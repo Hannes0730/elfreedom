@@ -16,7 +16,7 @@
                 <small>Posted on: {{ post.post_date }}  |  {{ post.post_time }}</small><br/>
                 
                 
-                {{ post.body | slice:":100" | safe}}...
+                {{ post.summary | slice:":50"}}...
                 
             </li>
             <br/>
