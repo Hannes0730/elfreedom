@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    
+
+<div class="home">
+    <h1>Welcome to ElFreedom Wall</h1>
+    <hr/>
+    <div >
+        <img class="home-img" src="{% static 'rizal.jpg' %}">
+    </div>
+    {%for post in intro %}
+    <p>{{ post.intro|safe }}</p>
+    {% endfor %}
+    <br/>
+    <div>
+    <p> </p>
+    </div>
+
+
+
+
+{% endblock %}
